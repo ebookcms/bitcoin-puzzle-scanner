@@ -67,7 +67,7 @@ PUZZLE_RANGES = {
     135: (0x4000000000000000000000000000000000, 0x7fffffffffffffffffffffffffffffffff),
     140: (0x80000000000000000000000000000000000, 0xfffffffffffffffffffffffffffffffffff),
     145: (0x1000000000000000000000000000000000000, 0x1ffffffffffffffffffffffffffffffffffff),
-    150: (0x10000000000000000000000000000000000000, 0x1fffffffffffffffffffffffffffffffffffff),
+    150: (0x20000000000000000000000000000000000000, 0x3fffffffffffffffffffffffffffffffffffff),
     155: (0x400000000000000000000000000000000000000, 0x7ffffffffffffffffffffffffffffffffffffff),
     160: (0x8000000000000000000000000000000000000000, 0xffffffffffffffffffffffffffffffffffffffff)
 }
