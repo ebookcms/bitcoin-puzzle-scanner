@@ -62,7 +62,13 @@ cd bitcoin-puzzle-scanner
 
 #### 2. Install Dependencies
 ```bash
+[WINDOWS]
 pip install cupy-cuda12x  # or cupy-cuda11x for CUDA 11
+
+[LINUX]
+python3 -m venv venv
+source venv/bin/activate
+pip install -U cupy-cuda12x
 ```
 
 #### 3. CUDA Kernel already compilied
