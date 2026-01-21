@@ -129,8 +129,10 @@ def initialize_and_auth(module):
         raw_data = d_buffer.get()
         
         # Convert to string
-        # int8 can have negative values, so we use % 256
-        byte_data = bytes([x % 256 for x in raw_data if x != 0])
+        # FIX FOR LINUX: Convert to int32 first to avoid overflow
+        # int8 can have negative values, so we convert to int32 then mask with 0xFF
+        raw_data_int = raw_data.astype('int32')
+        byte_data = bytes([int(x) & 0xFF for x in raw_data_int if x != 0])
         signature = byte_data.decode('utf-8', errors='ignore')
         
         # Display logo/signature
