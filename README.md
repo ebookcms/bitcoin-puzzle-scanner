@@ -33,8 +33,8 @@ Bitcoin puzzles are challenges created by transferring Bitcoin to addresses with
 ### 🛠️ Requirements
 
 #### Hardware
-- **GPU**: NVIDIA GPU with compute capability 7.0+ (Pascal or newer)
-  - Recommended: RTX 2000, 3000, 4000 series
+- **GPU**: NVIDIA GPU with compute capability 7.0+
+  - Recommended: RTX 20XX, 30XX, 40XX series
   - Minimum: GTX 2000 Ti or better
 
 #### Software
@@ -87,9 +87,9 @@ There are no backdoors or hidden scripts.
 ```bash
 wrappers_sm_75.fatbin  # Turing (RTX 2000, GTX 1600)
 wrappers_sm_80.fatbin  # Ampere (A100)
-wrappers_sm_86.fatbin  # Ampere (RTX 3000)
-wrappers_sm_89.fatbin  # Ada Lovelace (RTX 4000)
-wrappers_sm_90.fatbin  # Hopper (H100)
+wrappers_sm_86.fatbin  # Ampere (RTX 30Xxx series)
+wrappers_sm_89.fatbin  # Ada Lovelace (RTX 40xx series)
+wrappers_sm_90.fatbin  # Hopper (H100, L40S)
 ```
 
 #### 4. Verify Installation
